@@ -1,0 +1,137 @@
+body {
+    background-image: url(../imagenes/wallpaper_dota_2_01_1920x1080.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+header {
+    background: #011C26;
+    color:  #EDEDED;
+    padding: 10px 20px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+    position: relative; 
+}
+
+.menu-toggle {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #ffffff;
+    margin: 3px 0;
+}
+
+.nav-list {
+    list-style: none;
+    padding: 0;
+    display: flex; 
+}
+
+.nav-list li {
+    margin: 0 15px;
+}
+
+.nav-list a {
+    color: #F2A74B; 
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+.nav-list a:hover {
+    color: #FFD700; 
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+}
+
+.curso-imagen {
+    width: 40%; 
+    height: auto; 
+    border-radius: 600px;
+    margin: 0px 0 0 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); 
+    float: right; 
+}
+
+.semana {
+    background: rgba(0, 0, 0, 0.7); 
+    color: #EDEDED; 
+    padding: 15px;
+    border-radius: 8px;
+    margin: 10px 0; 
+    font-size: 1.2em; 
+    font-weight: bold; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s, background 0.3s;
+}
+
+.semana a {
+    color: #EDEDED; 
+    text-decoration: none; 
+}
+
+.semana:hover {
+    transform: translateY(-3px);
+    background: rgba(0, 0, 0, 0.9); 
+}
+
+.semana-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+}
+
+.semana {
+    flex: 0 0 48%; 
+    box-sizing: border-box; }
+
+
+@media (max-width: 600px) {
+
+    .menu-toggle {
+        display: flex; 
+    }
+
+    .nav-list {
+        display: none; 
+        flex-direction: column; 
+        position: absolute; 
+        top: 60px; 
+        right: 20px; 
+        background: rgba(1, 28, 38, 0.9); 
+        border-radius: 5px;
+        width: 200px; 
+        z-index: 1000; 
+    }
+
+    .nav-list.active {
+        display: flex; 
+    }
+
+    .nav-list li {
+        margin: 10px 0; 
+    }
+}
